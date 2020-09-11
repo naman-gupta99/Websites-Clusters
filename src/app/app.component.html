@@ -1,0 +1,33 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<mat-card>
+  <mat-card-header class="example-card">
+    <mat-card-title>Clusters</mat-card-title>
+  </mat-card-header>
+  <mat-card-content class="card-content">
+    <form #collectionForm="ngForm">
+      <mat-form-field appearance="legacy">
+        <mat-label>Add New Cluster</mat-label>
+        <input
+          matInput
+          placeholder="Enter Cluster Name"
+          name="collectionName"
+          [(ngModel)]="collectionFormValues.collectionName"
+        />
+      </mat-form-field>
+      <button
+        mat-raised-button
+        color="primary"
+        class="full-width"
+        (click)="addCollection()"
+      >
+        +
+      </button>
+    </form>
+  </mat-card-content>
+  <hr />
+  <!-- <mat-card-content>
+    <li *ngFor="let item of collectionsArray">{{ item.collectionName }}</li>
+  </mat-card-content> -->
+</mat-card>
+
+<router-outlet></router-outlet>

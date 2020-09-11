@@ -1,0 +1,11 @@
+{
+  "manifest_version": 2,
+  "name": "Links Organiser and Scheduler",
+  "version": "1.0.0",
+  "description": "Allows you to make collections of links and adding a time schedule, so that the links open up at a specified time",
+  "permissions": ["storage", "tabs", "activeTab"],
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "index.html"
+  }
+}
